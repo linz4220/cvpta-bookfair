@@ -1,0 +1,75 @@
+body {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.device {
+    padding: 20px;
+    color: white;
+}
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+    .device {background: red;}
+}
+/* Tablet - Portrait */
+@media only screen and (min-width: 600px) {
+    .device {background: yellow;}
+}
+/* Tablet - Landscape */
+@media only screen and (min-width: 768px) {
+    .device {background: green;}
+}
+/* Laptop or Desktop */
+@media only screen and (min-width: 992px) {
+    .device {background: blue;}
+}
+
+.button {
+    background-color: #b5c7dc;
+    color: #121f49;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 8px 25px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #121f49;
+    color: #dddddd;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #95b7df;
+    color: #121f49;
+}
+
+td {
+    text-align: center;
+    height: 28px;
+}
